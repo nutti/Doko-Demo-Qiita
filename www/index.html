@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width"/>
+  <title>どこでもQiita</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="styles/onsen-css-components.css">
+  <link rel="stylesheet" href="styles/app.css"/>
+  <link rel="stylesheet" href="css/ext/style.ccs" type="text/css" />
+  <link rel="stylesheet" href="css/ext/github.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/ext/widearea.css" type="text/css" />
+
+
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+
+  <script type="text/javascript" src="js/ext/zepto.js"></script>
+  <script type="text/javascript" src="js/ext/forcetk.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/ext/mustache.js"></script>
+  <script type="text/javascript" src="js/ext/marked.js"></script>
+  <script type="text/javascript" src="js/ext/highlight.pack.js"></script>
+  <script type="text/javascript" src="js/ext/widearea.js"></script>
+
+  <script type="text/javascript" src="js/secret.js"></script>
+  <script type="text/javascript" src="js/article.js"></script>
+  <script type="text/javascript" src="js/oauth.js"></script>
+  <script type="text/javascript" src="js/storage.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/nend.js"></script>
+
+  <style>
+    .page--menu-page__background {
+      background-color: #333;
+    }
+    
+    .page--menu-page__content {
+      color: white;
+    }
+
+    .menu-close,
+    .menu-close > .toolbar-button {
+      color: #999;
+    }
+
+    .menu-list,
+    .menu-item:first-child,
+    .menu-item:last-child,
+    .menu-item {
+      background-color: transparent;
+      background-image: none !important;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .menu-item {
+      padding: 0 0 0 20px;
+      line-height: 52px;
+      height: 52px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+    }
+
+    .menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-notification {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      height: 16px;
+      line-height: 16px;
+      min-width: 16px;
+      font-weight: 600;
+    }
+
+    .bottom-menu-list,
+    .bottom-menu-item:first-child,
+    .bottom-menu-item:last-child,
+    .bottom-menu-item {
+      border-color: #393939;
+      background-color: transparent;
+      background-image: none !important;
+      color: #ccc;
+    }
+
+    .bottom-menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <ons-sliding-menu
+    menu-page="view/menu.html" main-page="view/login.html" side="left"
+    var="menu" type="reveal" max-slide-distance="260px" swipeable="false">
+  </ons-sliding-menu>
+
+  <div id="nend_wrapper">
+    <script type="text/javascript" src="http://js1.nend.net/js/nendAdLoader.js"></script>
+  </div>
+  
+</body>
+</html>

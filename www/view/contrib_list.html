@@ -1,0 +1,12 @@
+<!--
+<ul class="list">
+-->
+  {{#records}}
+<!--
+      <li class="list__item list__item--chevron list-item" ng-click="edit(7)">
+-->
+<ons-list-item class="list__item list__item--chevron list-item" ng-click="edit({{id}})">
+    <div class="list-title">{{title}}</div>
+    <div class="list-body">{{body}}</div>
+</ons-list-item>
+  {{/records}}

@@ -1,0 +1,12 @@
+*.log
+*.*~
+*.png
+*.DS_Store
+*.bak*
+*#*#*
+
+auth_setup.sh
+github_setup.sh
+hooks/
+platforms/
+plugins/

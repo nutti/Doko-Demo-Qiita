@@ -1,0 +1,154 @@
+.editor {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.editor-section {
+		padding: 0 8px 8px;
+}
+
+.editor-body-section {
+		     padding: 0 8px 8px;
+		     max-height: 90%;
+		     height: 90%;
+}
+
+.editor-button-section {
+	position: absolute;
+	buttom: 0%;
+	width: 100%;
+	text-align: center;
+}
+
+.editor-button {
+	       margin: 0 auto;
+	       text-align: center;
+	       width: 90%;
+}
+
+.editor-button-half {
+		    margin: 0 auto;
+		    text-align: center;
+		    width: 40%;
+}
+	       
+
+.editor-text-input {
+		   display: block;
+		   width: 100%;
+}
+
+.editor-textarea-input {
+		       box-sizing: border-box;
+		       height: 600px; 
+		       width: 100%;
+
+}
+
+.list-item {
+	   height: 120px;
+	   max-height: 120px;
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+}
+
+.list-title {
+	    line-height: 1;
+	    font-weight: bold;
+	    margin-top: 5px;
+	    color: #333333;
+	    width: 90%;
+}
+
+.list-body {
+	   line-height: 1;
+	   color: #AAAAAA;
+	   font-size: 80%;
+	   margin-bottom: 5px;
+	   width: 90%;
+}
+
+.editor-top-frame {
+		  position: fixed;
+		  background-color: #444444;
+		  top: 0;
+		  width: 100%;
+		  height: 150px;
+		  z-index: 999;
+}
+
+.editor-middle-frame {
+		     position: fixed;
+		     background-color: #bbbbbb;
+		     z-index: 0;
+		     width: 100%;
+		     top: 150px;
+}
+
+.editor-buttom-frame {
+	      position: fixed;
+	      background-color: #000000;
+	      height: 60px;
+	      bottom: 60px;
+	      width: 100%;
+	      z-index: 999;
+}
+
+
+.preview-body {
+	 width: 95%;
+	 margin: 0 auto;
+	 font-size: 80%;
+}
+
+
+.nend {
+			  background-color: white;
+			    height: 60px;
+}
+
+
+.bottom-button-left {
+		    position: absolute;
+		    top: 25%;
+		    left: 0;
+		    margin: 0 0 0 10px;
+}
+
+.bottom-button-right {
+		     position: absolute;
+		     top: 25%;
+		     right: 0;
+		     margin: 0 10px 0 0;
+}
+
+.profile-icon {
+	      max-width: 32px;
+	      height: auto;
+}
+
+.profile-user {
+	      position: absolute;
+	      left: 0;
+	      top: 0;
+	      margin: 5px 0px 0 0px;
+	      padding: 0 10px 0 40px;
+	      line-height: 32px;
+	      vertical-align: auto;
+}
+
+.profile-contents {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  padding: 0 0 0 40px;
+		  vertical-align: auto;
+}
+
+.social-checkbox-padding {
+			 margin-left: 6px;
+}
+		 
+.sns-label {
+	   font-size: 90%;
+}

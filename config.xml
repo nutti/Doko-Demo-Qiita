@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="net.colorful-pico.doko-demo-qiita" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Doko-Demo-Qiita</name>
+    <description>
+      記事をQiitaへ投稿するアプリです。
+    </description>
+    <author email="nutti.metro@gmail.com" href="">
+      Colorful Pico
+    </author>
+    <content src="index.html" />
+    <access origin="*" browserOnly="true"/>
+    <feature name="InAppBrowser">
+      <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <preference name="DisallowOverscroll" value="true" />
+</widget>
