@@ -1,0 +1,49 @@
+<ons-navigator var="profileNavigator">
+  <ons-page ng-controller="ProfileController" id="profilePage">
+    <ons-toolbar>
+      <div class="left">
+	<ons-toolbar-button ng-click="cancel()">
+          <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+	</ons-toolbar-button>
+      </div>
+      <div class="center">ログイン情報</div>
+    </ons-toolbar>
+    
+    <ons-row style="margin-top:8px; text-align: center;">
+      <ons-col>
+	<div class="nend">
+	  <div class="new_nend_wrapper"></div>
+	</div>
+
+	<ons-list>
+
+	  <ons-list-item class="list__item ons-list-item-inner">
+	    <ons-icon icon="user" size="20px" fixed-width="false">
+	    </ons-icon>
+	    <div class="profile-user">
+	      <img class="profile-icon" src="{{profile_image}}"></img>
+	      {{login_name}}
+	    </div>
+	  </ons-list-item>
+
+	  <ons-list-item class="list__item ons-list-item-inner" modifier="tappable">
+	    投稿記事に不適切な内容を含む
+            <label class="switch switch--list-item">
+              <input type="checkbox" class="switch__input" id="improper-article">
+              <div class="switch__toggle"></div>
+            </label>
+	  </ons-list-item>
+
+	  <ons-list-item class="list__item ons-list-item-inner" modifier="tappable" ng-click="logout()">
+	    <ons-icon icon="unlink" size="20px" fixed-width="false">
+            </ons-icon>
+	    <div class="profile-contents">
+	      Qiitaからログアウト
+	    </div>
+	  </ons-list-item>
+
+	</ons-list>
+      </ons-col>
+    </ons-row>
+  </ons-page>
+</ons-navigator>

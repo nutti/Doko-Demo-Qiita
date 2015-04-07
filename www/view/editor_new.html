@@ -1,0 +1,86 @@
+<ons-navigator var="newEditorNavigator">
+  <ons-page ng-controller="NewEditorController" id="newEditorPage">
+    <ons-toolbar>
+      <div class="left">
+	<ons-toolbar-button ng-click="cancel()">
+          <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+	</ons-toolbar-button>
+      </div>
+      <div class="center">新しい投稿</div>
+      <div class="right">
+	<span class="toolbar-button--quiet navigation-bar__line-height" ng-click="submit()">
+	  <ons-icon icon="pencil" size="20px" fixed-width="false"></ons-icon>
+	  投稿
+	</span>
+      </div>
+    </ons-toolbar>
+    
+    <ons-row style="margin-top:8px; text-align: center;">
+      <ons-col>
+	<div class="nend">
+	  <div class="new_nend_wrapper"></div>	  
+	</div> 
+	
+	<section class="editor-section">
+          <div class="button-bar" style="width: 100%;">
+            <div class="button-bar__item">
+	      <input type="radio" name="submit_method" value="qiita">
+	      <button class="button-bar__button">Qiitaへ投稿</button>
+            </div>
+            <div class="button-bar__item">
+	      <input type="radio" name="submit_method" value="private">
+	      <button class="button-bar__button">限定共有投稿</button>
+              </div>
+            <div class="button-bar__item">
+	      <input type="radio" name="submit_method" value="draft" checked>
+	      <button class="button-bar__button">下書き保存</button>
+            </div>
+          </div>
+	</section>
+	
+	<section class="editor-section">
+          <label class="checkbox">
+            <input type="checkbox" id="gist">
+            <div class="checkbox__checkmark"></div>
+            <span class="ons-checkbox-inner"></span>
+	    <ons-icon icon="github" size="16px" fixed-width="false"></ons-icon>
+	    <span class="sns-label">
+              Gistに投稿
+	    </span>
+          </label>
+          <span class="social-checkbox-padding"></span>
+          <label class="checkbox">
+            <input type="checkbox" id="twitter">
+            <div class="checkbox__checkmark"></div>
+            <span class="ons-checkbox-inner"></span>
+	    <ons-icon icon="twitter" size="16px" fixed-width="false"></ons-icon>
+	    <span class="sns-label">
+              Twitterに投稿
+	    </span>
+          </label>
+	</section>
+	
+	<section class="editor-section">
+	  <input type="text" class="text-input text-input--underbar editor-text-input" id="title" placeholder="タイトル">
+	</section>
+	
+	<section class="editor-section">
+	  <input type="text" class="text-input text-input--underbar editor-text-input" id="tag" placeholder="タグ (タグ1, タグ2, ...)">
+	</section>
+	
+	
+	<section class="editor-body-section">
+	  <textarea class="textarea editor-textarea-input" id="text_body" placeholder="内容 (Markdown記法)"></textarea>
+	</section>
+      </ons-col>
+    </ons-row>
+    
+    <ons-bottom-toolbar modifier="bottom-menu">
+      <div class="bottom-button-right" ng-click="preview()">
+	<ons-icon icon="eye" size="20px" fixed-width="false"></ons-icon>
+	プレビュー
+      </div>
+    </ons-bottom-toolbar>
+    
+  </ons-page>
+</ons-navigator>

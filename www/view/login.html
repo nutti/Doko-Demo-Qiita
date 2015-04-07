@@ -1,0 +1,31 @@
+<ons-navigator var="loginNavigator">
+  <ons-page ng-controller="LoginController" id="loginPage">
+    <ons-toolbar>
+      <div class="center">ログイン</div>
+    </ons-toolbar>
+    
+    <ons-row style="margin-top:8px; text-align: center;">
+      <ons-col>
+	<div class="nend">
+	  <div class="new_nend_wrapper"></div>
+	</div>
+
+	<ons-list>
+	  <ons-list-item class="list__item ons-list-item-inner" modifier="tappable" ng-click="login()">
+	    <ons-icon icon="link" size="20px" fixed-width="false"></ons-icon>
+	    <div class="profile-contents">
+	      Qiitaへログイン
+	    </div>
+	  </ons-list-item>
+	  <ons-list-item>
+	    ログイン状態を保持する
+	    <label class="switch switch--list-item">
+	      <input type="checkbox" class="switch__input" id="auto-login" checked>
+	      <div class="switch__toggle"></div>
+	    </label>
+	  </ons-list-item>
+	</ons-list>
+      </ons-col>
+    </ons-row>
+  </ons-page>
+</ons-navigator>

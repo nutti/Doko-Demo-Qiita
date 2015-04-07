@@ -1,0 +1,27 @@
+<ons-navigator var="draftNavigator">
+  <ons-page ng-controller="DraftController" id="draftPage">
+    <ons-toolbar>
+      <div class="left">
+	<ons-toolbar-button ng-click="cancel()">
+          <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+	</ons-toolbar-button>
+      </div>
+      <div class="center">下書き一覧</div>
+    </ons-toolbar>
+
+    <ons-row style="margin-top:8px; text-align: center;">
+      <ons-col>
+	<div class="nend">
+	  <div class="new_nend_wrapper"></div>
+	</div>
+
+	<ons-list id="draft-list">
+	  <ons-list-item  ng-repeat="item in items" class="list__item list__item--chevron list-item" ng-click="edit($index)">
+	    <div class="list-title">{{item.title}}</div>
+	    <div class="list-body">{{item.body}}</div>
+	  </ons-list-item>
+	</ons-list>
+      </ons-col>
+    </ons-row>
+  </ons-page>
+</ons-navigator>
